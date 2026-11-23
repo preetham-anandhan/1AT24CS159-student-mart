@@ -31,7 +31,7 @@ function Dashboard() {
         }
 
         setUser(data);
-      } catch (error) {
+      } catch {
         localStorage.removeItem("token");
         navigate("/login");
       } finally {

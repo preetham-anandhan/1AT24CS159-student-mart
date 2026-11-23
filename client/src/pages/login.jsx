@@ -68,8 +68,8 @@ function Login() {
 
       localStorage.setItem("token", data.token);
       navigate("/dashboard");
-    } catch (err) {
-      setError("Something went wrong. Please try again.");
+    } catch {
+      setError("Could not reach the server. Please make sure it is running and try again.");
     } finally {
       setIsLoading(false);
     }

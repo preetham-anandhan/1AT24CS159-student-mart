@@ -78,8 +78,8 @@ function Registration() {
 
       setSuccess("Registration successful! Redirecting to login...");
       setTimeout(() => navigate("/login"), 1200);
-    } catch (err) {
-      setError("Something went wrong. Please try again.");
+    } catch {
+      setError("Could not reach the server. Please make sure it is running and try again.");
     } finally {
       setIsLoading(false);
     }
